@@ -1,0 +1,17 @@
+{
+  "name": "date-service",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "microscopic": "microscopic/microscopic",
+    "microscopic-roundrobin-load-balancer": "https://github.com/microscopic/microscopic-roundrobin-load-balancer.git",
+    "microscopic-tcp-transport": "microscopic/microscopic-tcp-transport",
+    "microscopic-utils": "microscopic/microscopic-utils"
+  }
+}

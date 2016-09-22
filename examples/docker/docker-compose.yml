@@ -1,0 +1,35 @@
+version: "2"
+services:
+  date-service-1:
+    build:
+      context: ./date-service
+    links:
+      - etcd
+  date-service-2:
+    build:
+      context: ./date-service
+    links:
+      - etcd
+  time-service-1:
+    build:
+      context: ./time-service
+    links:
+      - etcd
+  time-service-2:
+    build:
+      context: ./time-service
+    links:
+      - etcd
+  client:
+    build:
+      context: ./client
+    links:
+      - etcd
+      - date-service-1
+      - date-service-2
+      - time-service-1
+      - time-service-2
+  etcd:
+    image: elcolio/etcd
+    expose:
+      - "2379"
