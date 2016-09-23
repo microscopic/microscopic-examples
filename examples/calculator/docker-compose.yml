@@ -1,0 +1,31 @@
+version: "2"
+services:
+  calculator-service-1:
+    build:
+      context: ./calculator-service
+    links:
+      - rabbitmq-server
+      - etcd
+  calculator-service-2:
+    build:
+      context: ./calculator-service
+    links:
+      - rabbitmq-server
+      - etcd
+  client:
+    build:
+      context: ./client
+    links:
+      - etcd
+      - rabbitmq-server
+      - calculator-service-1
+      - calculator-service-2
+  etcd:
+    image: elcolio/etcd
+    expose:
+      - "2379"
+  rabbitmq-server:
+    image: rabbitmq
+    hostname: rabbitmq-server-1
+    expose:
+      - "5672"

@@ -24,4 +24,4 @@ setInterval(() => {
       console.log(`${date} ${time}`)
     })
   })
-}, 1000)
+}, 100)

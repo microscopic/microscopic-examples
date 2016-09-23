@@ -10,7 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "microscopic": "microscopic/microscopic",
-    "microscopic-roundrobin-load-balancer": "https://github.com/microscopic/microscopic-roundrobin-load-balancer.git",
+    "microscopic-roundrobin-load-balancer": "microscopic/microscopic-roundrobin-load-balancer.git",
     "microscopic-tcp-transport": "microscopic/microscopic-tcp-transport",
     "microscopic-utils": "microscopic/microscopic-utils"
   }
