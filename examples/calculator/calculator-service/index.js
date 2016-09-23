@@ -28,6 +28,4 @@ calculatorService.addMethod({
   }
 })
 
-setTimeout(() => {
-  calculatorService.start()
-}, 5 * 1000)
+calculatorService.start()
