@@ -1,0 +1,17 @@
+version: "2"
+services:
+  service-1:
+    build:
+      context: ./service
+    links:
+      - etcd
+  client:
+    build:
+      context: ./client
+    links:
+      - etcd
+      - service-1
+  etcd:
+    image: elcolio/etcd
+    expose:
+      - "2379"

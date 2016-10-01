@@ -1,0 +1,16 @@
+{
+  "name": "service",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "microscopic": "microscopic/microscopic",
+    "microscopic-tcp-transport": "microscopic/microscopic-tcp-transport",
+    "microscopic-validation-joi": "microscopic/microscopic-validation-joi"
+  }
+}
