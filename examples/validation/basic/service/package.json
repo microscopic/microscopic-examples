@@ -9,9 +9,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "joi": "^9.1.0",
     "microscopic": "microscopic/microscopic",
     "microscopic-tcp-transport": "microscopic/microscopic-tcp-transport",
-    "microscopic-validation-joi": "microscopic/microscopic-validation-joi"
+    "microscopic-validation": "microscopic/microscopic-validation"
   }
 }

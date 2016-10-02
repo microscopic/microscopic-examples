@@ -1,5 +1,5 @@
 {
-  "name": "service",
+  "name": "client",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,9 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "joi": "^9.1.0",
     "microscopic": "microscopic/microscopic",
-    "microscopic-tcp-transport": "microscopic/microscopic-tcp-transport",
-    "microscopic-validation-joi": "microscopic/microscopic-validation-joi"
+    "microscopic-tcp-transport": "microscopic/microscopic-tcp-transport"
   }
 }
