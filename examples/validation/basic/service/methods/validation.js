@@ -1,21 +1,6 @@
 'use strict'
 
-const Microscopic = require('microscopic');
-const microscopic = new Microscopic({
-  etcd: {
-    hosts: [ 'http://etcd:2379' ]
-  }
-})
-
-const service = microscopic.createService('service', {
-  transport: {
-    type: 'microscopic-tcp-transport'
-  }
-})
-
-service.register(require('microscopic-validation'))
-
-service.addMethod({
+module.exports = {
   name: 'validation',
   params: {
     age: (value) => value > 18 || 'Must be > 18',
@@ -27,6 +12,4 @@ service.addMethod({
   handler: (request, reply) => {
     reply('Ok')
   }
-})
-
-service.start()
+}

@@ -1,0 +1,9 @@
+name: service
+transport:
+  type: microscopic-tcp-transport
+plugins:
+  - microscopic-validation
+global:
+  etcd:
+    hosts:
+      - http://etcd:2379

@@ -1,0 +1,8 @@
+name: date-service
+transport:
+  type: microscopic-tcp-transport
+loadbalancer: microscopic-roundrobin-load-balancer
+global:
+  etcd:
+    hosts:
+      - http://etcd:2379

@@ -1,0 +1,8 @@
+name: calculator-service
+transport:
+  type: microscopic-rabbitmq-transport
+  url: amqp://rabbitmq-server:5672
+global:
+  etcd:
+    hosts:
+      - http://localhost:2379
